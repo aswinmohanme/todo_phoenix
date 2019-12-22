@@ -1,8 +1,8 @@
-<h1>Show Todo</h1>
+<h1 class="text-4xl font-bold">Show Todo</h1>
 
 <ul>
 
-  <li>
+  <li class="mt-4">
     <strong>Title:</strong>
     <%= @todo.title %>
   </li>
@@ -19,5 +19,5 @@
 
 </ul>
 
-<span><%= link "Edit", to: Routes.todo_path(@conn, :edit, @todo) %></span>
-<span><%= link "Back", to: Routes.todo_path(@conn, :index) %></span>
+<span><%= link "Edit", to: Routes.todo_path(@conn, :edit, @todo), class: "bg-indigo-200 shadow-lg rounded-lg px-3 py-2 mt-4 inline-block" %></span>
+<span><%= link "Back", to: Routes.todo_path(@conn, :index), class: "bg-indigo-200 shadow-lg rounded-lg px-3 py-2 mt-4 inline-block" %></span>

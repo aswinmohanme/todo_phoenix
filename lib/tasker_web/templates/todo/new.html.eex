@@ -1,5 +1,5 @@
-<h1>New Todo</h1>
+<h1 class="text-4xl font-bold">New Todo</h1>
 
 <%= render "form.html", Map.put(assigns, :action, Routes.todo_path(@conn, :create)) %>
 
-<span><%= link "Back", to: Routes.todo_path(@conn, :index) %></span>
+<span><%= link "Back", to: Routes.todo_path(@conn, :index), class: "bg-indigo-200 shadow-lg rounded-lg px-3 py-2 mt-4 inline-block" %></span>

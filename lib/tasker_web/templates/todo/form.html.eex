@@ -5,19 +5,17 @@
     </div>
   <% end %>
 
-  <%= label f, :title %>
-  <%= text_input f, :title %>
+  <%= label f, :title, class: "block mt-8" %>
+  <%= text_input f, :title, class: "form-input" %>
   <%= error_tag f, :title %>
 
-  <%= label f, :description %>
-  <%= textarea f, :description %>
+  <%= label f, :description, class: "block mt-4" %>
+  <%= textarea f, :description, class: "form-input" %>
   <%= error_tag f, :description %>
 
-  <%= label f, :is_complete %>
+  <%= label f, :is_complete, class: "block mt-4" %>
   <%= checkbox f, :is_complete %>
   <%= error_tag f, :is_complete %>
 
-  <div>
-    <%= submit "Save" %>
-  </div>
+  <%= submit "Save", class: "block bg-green-200 shadow-lg rounded-lg px-3 py-2 mt-4" %>
 <% end %>
