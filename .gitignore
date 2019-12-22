@@ -32,3 +32,22 @@ npm-debug.log
 # we ignore priv/static. You may want to comment
 # this depending on your deployment strategy.
 /priv/static/
+
+# Created by https://www.gitignore.io/api/elixir
+# Edit at https://www.gitignore.io/?templates=elixir
+
+### Elixir ###
+/_build
+/cover
+/deps
+/doc
+/.fetch
+erl_crash.dump
+*.ez
+*.beam
+/config/*.secret.exs
+.elixir_ls/
+
+### Elixir Patch ###
+
+# End of https://www.gitignore.io/api/elixir
