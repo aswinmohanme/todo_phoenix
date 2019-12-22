@@ -7,10 +7,11 @@
     <title>Tasker · Phoenix Framework</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
-  <body class="antialiased w-1/2 mx-auto mt-8" >
+
+  <body class="antialiased w-1/2 mx-auto mt-8 text-gray-900 bg-gray-100" >
     <main role="main" class="container">
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <p class="bg-indigo-300" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="bg-red-300" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= render @view_module, @view_template, assigns %>
     </main>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
