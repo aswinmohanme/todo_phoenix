@@ -10,8 +10,8 @@
 
   <body class="antialiased w-1/2 mx-auto mt-8 text-gray-900 bg-gray-100" >
     <main role="main" class="container">
-      <p class="bg-indigo-300" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="bg-red-300" role="alert"><%= get_flash(@conn, :error) %></p>
+      <p class="bg-indigo-100 shadow-lg rounded-lg" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="bg-red-300 shadow-lg rounded-lg" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= render @view_module, @view_template, assigns %>
     </main>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
