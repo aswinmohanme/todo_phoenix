@@ -16,7 +16,7 @@ defmodule TaskerWeb.Router do
   scope "/", TaskerWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    resources "/", TodoController
   end
 
   # Other scopes may use custom stacks.
