@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
 
-  <body class="antialiased w-1/2 mx-auto mt-8 text-gray-900 bg-gray-100" >
+  <body class="antialiased p-5 max-w-xl mx-auto mt-8 text-gray-900 bg-gray-100" >
     <main role="main" class="container">
       <p class="bg-indigo-100 shadow-lg rounded-lg" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="bg-red-300 shadow-lg rounded-lg" role="alert"><%= get_flash(@conn, :error) %></p>
